@@ -51,6 +51,10 @@ export default class CustomPlayer {
     try {
       const sectionTagHTML = document.getElementById(sectionIdHtml);
       if (!sectionTagHTML) {
+        const messageUnsuportted = document.createTextNode(
+          this._messageUnsuportted,
+        );
+        this.videoTagtHTML.appendChild(messageUnsuportted);
         const sectionElement = document.createElement('section');
         sectionElement.id = sectionIdHtml;
         sectionElement.appendChild(this.videoTagtHTML);
