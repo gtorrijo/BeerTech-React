@@ -1,4 +1,4 @@
-import CustomPlayer, { Button } from './components/CustomPlayer';
+import CustomPlayer from './components/CustomPlayer';
 
 const video = new CustomPlayer(
   320,
