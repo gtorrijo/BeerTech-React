@@ -20,11 +20,7 @@ export default class CustomPlayer {
   }
 
   set width(width) {
-    try {
-      this._width = width;
-    } catch (errorWidth) {
-      console.log(`${errorMessages[0]} ${errorWidth}`);
-    }
+    this._width = width;
   }
 
   get width() {
